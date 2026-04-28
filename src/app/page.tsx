@@ -13,7 +13,7 @@ export default function Home() {
         <div className="w-full h-full" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: '0' }}>
           <div className="relative overflow-hidden" style={{ width: '100%', height: '100%' }}>
             <video 
-              src="/api/videos?file=blur1.mp4"
+              src="videos/blur1.mp4"
               className="w-full h-full object-cover" 
               muted 
               loop
@@ -33,7 +33,7 @@ export default function Home() {
           </div>
           <div className="relative overflow-hidden" style={{ width: '100%', height: '100%' }}>
             <video 
-              src="/api/videos?file=equipment.mp4"
+              src="videos/equipment.mp4"
               className="w-full h-full object-cover" 
               muted 
               loop
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
           <div className="relative overflow-hidden" style={{ width: '100%', height: '100%' }}>
             <video 
-              src="/api/videos?file=planch1.mp4"
+              src="videos/planch1.mp4"
               className="w-full h-full object-cover" 
               muted 
               loop
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
           <div className="relative overflow-hidden" style={{ width: '100%', height: '100%' }}>
             <video 
-              src="/api/videos?file=hamer1.mp4"
+              src="videos/hamer1.mp4"
               className="w-full h-full object-cover" 
               muted 
               loop
