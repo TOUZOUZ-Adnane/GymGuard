@@ -92,11 +92,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-neutral-900 p-6 rounded-lg border border-gray-700">
               <h3 className="text-xl font-bold mb-3 text-cyan-400">Email</h3>
-              <p className="text-gray-300">info@gymguard.com</p>
+              <p className="text-gray-300">business.deepvisionary@gmail.com</p>
             </div>
             <div className="bg-neutral-900 p-6 rounded-lg border border-gray-700">
               <h3 className="text-xl font-bold mb-3 text-cyan-400">Phone</h3>
-              <p className="text-gray-300">+1 (555) 123-4567</p>
+              <p className="text-gray-300">(+212)640350562</p>
             </div>
             <div className="bg-neutral-900 p-6 rounded-lg border border-gray-700">
               <h3 className="text-xl font-bold mb-3 text-cyan-400">Address</h3>
