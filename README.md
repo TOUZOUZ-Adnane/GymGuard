@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GymGuard Landing Page
 
-## Getting Started
+GymGuard is an interactive gym surveillance landing page built as a modern Next.js solution. It presents a polished product showcase with live video sections, privacy and equipment monitoring, and a fully integrated same-page camera dashboard.
 
-First, run the development server:
+## Solution Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+GymGuard emulates a gym monitoring experience with multiple camera feeds and AI-style event tracking. Users can select any live camera in the Monitoring Section and immediately see a clean dashboard for that feed without leaving the page.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The layout combines immersive video content with structured monitoring data, making it easy to communicate both the visual surveillance experience and the intelligent alert system.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Interactive Monitoring Dashboard**
+  - Select a camera and display its dashboard inline
+  - Dashboard shows event detection, equipment alerts, and exercise feedback
+  - Dropdown-based camera switching inside the dashboard
 
-## Learn More
+- **Dynamic Event Visualization**
+  - Event table uses color-coded severity levels
+  - Equipment alerts are styled by status
+  - Exercise feedback clearly distinguishes correct vs incorrect form
 
-To learn more about Next.js, take a look at the following resources:
+- **Multiple Video Showcase Sections**
+  - Responsive camera grid in the Monitoring Section
+  - Privacy section with face-blur video presentation
+  - Surveillance section focused on equipment monitoring
+  - Tracking section demonstrating performance analysis videos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Mobile-first responsive design**
+  - Camera grid adapts to all device sizes
+  - Video cards resize cleanly for phones, tablets, and desktops
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Consistent UI styling**
+  - Cyan accent borders and glass-like cards
+  - Rounded containers with subtle shadows
+  - Clean typography and modern dark theme
 
-## Deploy on Vercel
+- **Data-driven camera setup**
+  - Camera events and alerts are defined in shared data
+  - Dashboard content updates automatically when camera data changes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## What this page communicates
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GymGuard is a smart gym monitoring product, not just a landing page.
+- It highlights both live video surveillance and actionable insights.
+- It provides a clear UX for selecting and analyzing gym camera feeds.
+
+## Tech Stack
+
+- Next.js 16
+- Tailwind CSS
+- React
+
+## Notes
+
+This README focuses on the product and feature set rather than installation details.
