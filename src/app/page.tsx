@@ -96,7 +96,7 @@ export default function Home() {
             </div>
             <div className="bg-neutral-900 p-6 rounded-lg border border-gray-700">
               <h3 className="text-xl font-bold mb-3 text-cyan-400">Phone</h3>
-              <p className="text-gray-300">(+212)640350562</p>
+              <p className="text-gray-300">(+212) 640350562</p>
             </div>
             <div className="bg-neutral-900 p-6 rounded-lg border border-gray-700">
               <h3 className="text-xl font-bold mb-3 text-cyan-400">Address</h3>
