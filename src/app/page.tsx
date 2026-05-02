@@ -106,8 +106,7 @@ export default function Home() {
             </div>
             <div className="lg:w-1/2">
               <div className="rounded-lg overflow-hidden border-2 border-cyan-400 shadow-lg shadow-cyan-400/20">
-                <video className="w-full h-64 object-cover"src="/videos/blur1.mp4" autoPlay muted loop playsInline/>
-                  
+                <video className="w-full h-64 object-cover" src="videos/blur1.mp4" autoPlay muted loop playsInline />
               </div>
             </div>
           </div>
@@ -129,7 +128,7 @@ export default function Home() {
             </div>
             <div className="lg:w-1/2 lg:order-1">
               <div className="rounded-lg overflow-hidden border-2 border-cyan-400 shadow-lg shadow-cyan-400/20">
-                <video className="w-full h-64 object-cover" src="/videos/equipment.mp4" autoPlay muted loop playsInline />
+                <video className="w-full h-64 object-cover" src="videos/equipment.mp4" autoPlay muted loop playsInline />
               </div>
             </div>
           </div>
@@ -146,12 +145,12 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-neutral-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition">
               <div className="rounded overflow-hidden mb-4 border border-gray-600">
-                <video className="w-full h-48 object-cover" src="/videos/hamer1.mp4" autoPlay muted loop playsInline />
+                <video className="w-full h-48 object-cover" src="videos/hamer1.mp4" autoPlay muted loop playsInline />
               </div>
             </div>
             <div className="bg-neutral-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition">
               <div className="rounded overflow-hidden mb-4 border border-gray-600">
-                <video className="w-full h-48 object-cover" src="/videos/planch1.mp4" autoPlay muted loop playsInline/>
+                <video className="w-full h-48 object-cover" src="videos/planch1.mp4" autoPlay muted loop playsInline />
               </div>
             </div>
           </div>
