@@ -39,18 +39,7 @@ The layout combines immersive video content with structured monitoring data, mak
   - Camera events and alerts are defined in shared data
   - Dashboard content updates automatically when camera data changes
 
-## What this page communicates
+## Try the Live Demo
 
-- GymGuard is a smart gym monitoring product, not just a landing page.
-- It highlights both live video surveillance and actionable insights.
-- It provides a clear UX for selecting and analyzing gym camera feeds.
-
-## Tech Stack
-
-- Next.js 16
-- Tailwind CSS
-- React
-
-## Notes
-
-This README focuses on the product and feature set rather than installation details.
+You can access and test the GymGuard landing page here:  
+👉 https://touzouz-adnane.github.io/GymGuard/
