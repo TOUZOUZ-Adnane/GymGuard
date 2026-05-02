@@ -1,97 +1,25 @@
+"use client";
+
+import { useState } from "react";
+import CameraDashboard from "../components/CameraDashboard";
+
 export default function Home() {
+  const [selectedCameraId, setSelectedCameraId] = useState<number | null>(null);
+
   return (
     <div className="min-h-screen bg-neutral-900 text-white">
-      {/* Top Banner */}
-      <header className="bg-neutral-950">
-        <div className="container mx-auto px-4 py-6">
-          <h1 className="text-5xl font-bold text-cyan-400">GymGuard</h1>
-        </div>
-      </header>
+      {selectedCameraId === null ? (
+        <>
+          {/* Top Banner */}
+          <header className="bg-neutral-950">
+            <div className="container mx-auto px-4 py-6">
+              <h1 className="text-5xl font-bold text-cyan-400">GymGuard</h1>
+            </div>
+          </header>
 
-      {/* Monitoring Section - Full Page Videos */}
-      <section className="bg-neutral-950 w-full" style={{ height: '100vh', display: 'block' }}>
-        <div className="w-full h-full" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: '0' }}>
-          <div className="relative overflow-hidden" style={{ width: '100%', height: '100%' }}>
-            <video 
-              src="videos/blur1.mp4"
-              className="w-full h-full object-cover" 
-              muted 
-              loop
-              autoPlay
-              playsInline
-              style={{ display: 'block', width: '100%', height: '100%' }}
-            />
+          <CameraDashboard selectedCameraId={selectedCameraId} onSelectCamera={setSelectedCameraId} />
 
-            {/* Recording indicator */}
-            <div className="absolute top-4 right-4 flex items-center gap-2">
-              <span className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
-              <span className="text-xs text-red-400 font-semibold">REC</span>
-            </div>
-            <div className="absolute bottom-6 left-6 bg-black bg-opacity-70 px-4 py-2 rounded text-cyan-400 font-semibold">
-              Camera 1
-            </div>
-          </div>
-          <div className="relative overflow-hidden" style={{ width: '100%', height: '100%' }}>
-            <video 
-              src="videos/equipment.mp4"
-              className="w-full h-full object-cover" 
-              muted 
-              loop
-              autoPlay
-              playsInline
-              style={{ display: 'block', width: '100%', height: '100%' }}
-            />
-            {/* Recording indicator */}
-            <div className="absolute top-4 right-4 flex items-center gap-2">
-              <span className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
-              <span className="text-xs text-red-400 font-semibold">REC</span>
-            </div>
-            <div className="absolute bottom-6 left-6 bg-black bg-opacity-70 px-4 py-2 rounded text-cyan-400 font-semibold">
-              Camera 2
-            </div>
-          </div>
-          <div className="relative overflow-hidden" style={{ width: '100%', height: '100%' }}>
-            <video 
-              src="videos/planch1.mp4"
-              className="w-full h-full object-cover" 
-              muted 
-              loop
-              autoPlay
-              playsInline
-              style={{ display: 'block', width: '100%', height: '100%' }}
-            />
-            {/* Recording indicator */}
-            <div className="absolute top-4 right-4 flex items-center gap-2">
-              <span className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
-              <span className="text-xs text-red-400 font-semibold">REC</span>
-            </div>
-            <div className="absolute bottom-6 left-6 bg-black bg-opacity-70 px-4 py-2 rounded text-cyan-400 font-semibold">
-              Camera 4
-            </div>
-          </div>
-          <div className="relative overflow-hidden" style={{ width: '100%', height: '100%' }}>
-            <video 
-              src="videos/hamer1.mp4"
-              className="w-full h-full object-cover" 
-              muted 
-              loop
-              autoPlay
-              playsInline
-              style={{ display: 'block', width: '100%', height: '100%' }}
-            />
-            {/* Recording indicator */}
-            <div className="absolute top-4 right-4 flex items-center gap-2">
-              <span className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
-              <span className="text-xs text-red-400 font-semibold">REC</span>
-            </div>
-            <div className="absolute bottom-6 left-6 bg-black bg-opacity-70 px-4 py-2 rounded text-cyan-400 font-semibold">
-              Camera 3
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Privacy Section */}
+          {/* Privacy Section */}
       <section className="py-20 px-4 bg-neutral-900">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -143,16 +71,16 @@ export default function Home() {
             GymGuard tracks users performing various exercises, ensuring proper form and technique for both strength training and bodyweight exercises. Our AI analyzes movements to provide real-time feedback and prevent injuries.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-neutral-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition">
-              <div className="rounded overflow-hidden mb-4 border border-gray-600">
+            {/* <div className="bg-neutral-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition"> */}
+              <div className="rounded-lg overflow-hidden mb-4 border-2 border-cyan-400 shadow-lg shadow-cyan-400/20">
                 <video className="w-full h-48 object-cover" src="videos/hamer1.mp4" autoPlay muted loop playsInline />
               </div>
-            </div>
-            <div className="bg-neutral-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition">
-              <div className="rounded overflow-hidden mb-4 border border-gray-600">
+            {/* </div> */}
+            {/* <div className="bg-neutral-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition"> */}
+              <div className="rounded-lg overflow-hidden mb-4 border-2 border-cyan-400 shadow-lg shadow-cyan-400/20">
                 <video className="w-full h-48 object-cover" src="videos/planch1.mp4" autoPlay muted loop playsInline />
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </section>
@@ -177,6 +105,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+        </>
+      ) : (
+        <CameraDashboard selectedCameraId={selectedCameraId} onSelectCamera={setSelectedCameraId} />
+      )}
     </div>
   );
 }
